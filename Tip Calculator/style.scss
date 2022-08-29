@@ -1,0 +1,186 @@
+// colors
+$StrongCyan: hsl(172, 67%, 45%);
+$VeryDarkCyan: hsl(183, 100%, 15%); 
+$DarkGrayishCyan: hsl(186, 14%, 43%);
+$GrayishCyan: hsl(184, 14%, 56%);
+$LightGrayishCyan: hsl(185, 41%, 84%);
+$VeryLightGrayishCyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background: $LightGrayishCyan;
+    font-family: "Space Mono", monospace;
+}
+main {
+    background: $White;
+    display: flex;
+    width: 50%;
+    height: 53%;
+    justify-content: center;
+    border-radius: 15px;
+    .bill__total {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        width: 45%;
+        margin-right: 3%;
+    }
+    .dollar__sign--in {
+        padding: 5px;
+        width: 100%;
+        background: $LightGrayishCyan;
+        font-weight: 700;
+        font-size: 20px;
+        color: $VeryDarkCyan;
+        border: 0;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            padding: 5px;
+            background: $LightGrayishCyan;
+            font-weight: 700;
+            font-size: 20px;
+            color: $VeryDarkCyan;
+        }
+    }
+    .bill {
+        margin-top: 10px;
+    }
+    input {
+        text-align: right;
+    }
+    .tip {
+        max-width: 100%;
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        .tip__percentage {
+            background:$VeryDarkCyan;
+            border: 0;
+            border-radius: 5px;
+            padding: 7px 35px;
+            color: $VeryLightGrayishCyan;
+            font-weight: 700;
+            font-size: 18px;
+            width: 32%;
+            height: 10%;
+            cursor: pointer;
+            &.active {
+                background: $StrongCyan;
+                color: $White;
+                transition: 0.15s;
+            }
+            &:hover {
+                background:$StrongCyan;
+                transition: 0.15s;
+                color: $VeryLightGrayishCyan;
+            }            
+        }
+        .custom {
+            background: $LightGrayishCyan;
+            border: 0;
+            border-radius: 5px;
+            padding: 7px 35px;
+            color: $GrayishCyan;
+            font-weight: 700;
+            font-size: 18px;
+            width: 32%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+            &:hover {
+                background: $DarkGrayishCyan;
+                transition: 0.15s;
+                color: $VeryLightGrayishCyan;
+        }
+    }
+}
+    h3 {
+        margin-bottom: 10px;
+    }
+    .bill {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .select__people {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .people {
+        width: 100%;
+        height: 43px;
+        padding: 5px;
+        background: $LightGrayishCyan;
+        font-weight: 700;
+        font-size: 20px;
+        color: $VeryDarkCyan;
+        border: 0;
+        border-radius: 7px;
+    }
+    .num {
+        font-weight: 700;
+    }
+
+    .tip__per--person {
+        background: $VeryDarkCyan;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        width: 45%;
+        height: 89%;
+        border-radius: 10px;
+        margin-left: 3%;
+        margin-top: 20px;
+        .tip__amount {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 15px;
+            h2 {
+                color: $VeryLightGrayishCyan;
+            }
+            p {
+                color: $DarkGrayishCyan;
+                font-size: 20px;
+            }
+            h1 {
+                color: $StrongCyan;
+            }            
+        }
+    }
+    .reset {
+        background: $StrongCyan;
+        color: $VeryLightGrayishCyan;
+        padding: 10px 35%;
+        border: 0;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 700;
+        margin: 50px 10px;
+        &:hover {
+            background: $DarkGrayishCyan;
+            transition: 0.15s;
+            color: $VeryLightGrayishCyan;
+        }
+    }
+}
+
